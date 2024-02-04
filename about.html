@@ -41,6 +41,11 @@
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
 
     <style>
+    #main-services {
+      position: relative;
+      z-index: 10; /* Підвищуємо z-index, щоб вміст секції відображався поверх маски */
+    }
+  
         #fh5co-header {
             position: relative;
             z-index: 1; /* Ensure the header is above other elements but below the overlay */
@@ -130,37 +135,33 @@
             </div>
         </header>
 
-        <!-- Основні послуги -->
-        <div id="fh5co-services" class="fh5co-bg-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center animate-box">
-                        <div class="services">
-                            <span><img class="img-responsive" src="images/windshield.svg" alt=""></span>
-                            <h3>Заміна Лобового Скла</h3>
-                            <p>Професійна заміна лобового скла з використанням найновіших матеріалів та технологій. Гарантія якості на всі види робіт.</p>
-                            <p><a href="#" class="btn btn-primary btn-outline btn-sm">Дізнатись більше <i class="icon-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center animate-box">
-                        <div class="services">
-                            <span><img class="img-responsive" src="images/car-repair.svg" alt=""></span>
-                            <h3>Ремонт Автоскла</h3>
-                            <p>Швидкий та надійний ремонт тріщин та сколів на автосклі, з використанням сучасних матеріалів для найкращого результату.</p>
-                            <p><a href="#" class="btn btn-primary btn-outline btn-sm">Дізнатись більше <i class="icon-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center animate-box">
-                        <div class="services">
-                            <span><img class="img-responsive" src="images/car-window.svg" alt=""></span>
-                            <h3>Тонування Скла</h3>
-                            <p>Професійне тонування автоскла, яке забезпечує комфорт та конфіденційність водія та пасажирів. Великий вибір тонів.</p>
-                            <p><a href="#" class="btn btn-primary btn-outline btn-sm">Дізнатись більше <i class="icon-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                </div>
+<!-- Доданий блок -->
+<section id="fh5co-faq" class="fh5co-bg-section">
+    <div class="container">
+        <header class="row">
+            <div class="col-md-12">
+                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeIn">Професійний ремонт та заміна автоскла</h2>
             </div>
-        </div>
+        </header>
+        <article class="row">
+            <div class="col-md-12">
+                <p class="animate-box" data-animate-effect="fadeIn">Наша компанія АВТОСКЛО. має багаторічний досвід у сфері ремонту та заміни автоскла. Ми гордо надаємо високоякісні послуги наших досвідчених фахівців, які гарантують надійність і якість для вашого автомобіля.</p>
+                <p class="animate-box" data-animate-effect="fadeIn">Наші послуги включають у себе:</p>
+                <ul class="animate-box" data-animate-effect="fadeIn">
+                    <li>Заміну та ремонт автоскла всіх марок і моделей автомобілів.</li>
+                    <li>Тонування скла для забезпечення конфіденційності та захисту від сонячних променів.</li>
+                    <li>Бронювання автоскла для захисту від ушкоджень та подряпин.</li>
+                    <li>Полірування та чистку скла для підтримання чистоти та прозорості.</li>
+                    <li>Використання високоякісного автоскла від провідних виробників, що відповідає всім стандартам безпеки.</li>
+                </ul>
+                <p class="animate-box" data-animate-effect="fadeIn">Ми завжди готові відповісти на всі ваші запитання та забезпечити максимальний комфорт та зручність для вас. Звертайтеся до нас і довіряйте нам свій автомобіль.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+
 
         <div id="fh5co-faq" class="fh5co-bg-section">
             <div class="container">
