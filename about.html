@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Автоскло Service" />
     <meta property="og:description" content="Кращий сервіс заміни та ремонту автоскла" />
     <meta name="twitter:title" content="Автоскло Service" />
-    <meta name="twitter:image" content="images/auto-glass.JPG" />
+    <meta name="twitter:image" content="images/auto-glass.jpg" />
     <meta name="twitter:url" content="your-website.com" />
     <meta name="twitter:card" content="summary" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
@@ -39,6 +39,32 @@
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- Favicon -->
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
+
+    <style>
+        #fh5co-header {
+            position: relative;
+            z-index: 1; /* Ensure the header is above other elements but below the overlay */
+        }
+
+        #main-services {
+            position: relative;
+            z-index: 2; /* This will make sure the services block is above the header's overlay */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha for the desired opacity */
+            z-index: -1; /* This ensures the overlay is behind the content */
+        }
+
+        #fh5co-footer {
+    z-index: 1; /* Або зберігаємо поточний z-index, якщо він був встановлений */
+  }
+    </style>
 </head>
 
 <body>
@@ -71,7 +97,7 @@
                     <div class="col-xs-10 text-right menu-1">
                         <ul>
                             <li><a href="index.html">Головна</a></li>
-                            <li><a href="gallery.html">Послуги</a></li>
+                            <li><a href="services.html">Послуги</a></li>
                             <li><a href="contact.html">Контакти</a></li>
                             <li class="active"><a href="about.html">Про нас</a></li>
                             <li><a href="pricing.html">Ціни</a></li>
@@ -85,7 +111,7 @@
 
 
         <!-- Хедер -->
-        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/auto-garage.JPG);" data-stellar-background-ratio="0.5">
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/auto-garage.jpg);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -202,7 +228,7 @@
         
 
       <!-- Футер -->
-<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/auto-garage.JPG);" role="contentinfo">
+<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/auto-garage.jpg);" role="contentinfo">
     <div class="overlay"></div>
     <div class="container">
         <div class="row row-pb-md">
