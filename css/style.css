@@ -270,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 .calculator {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f8f9fa;
@@ -323,6 +324,95 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+/* Стилі для блогу */
+#fh5co-blog .fh5co-heading h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.886);
+}
+#fh5co-blog .fh5co-heading p {
+  color: #ffffff; 
+  font-size: 18px; /* Розмір шрифту для підзаголовка */
+  margin-bottom: 60px; /* Великий відступ знизу для підзаголовка */
+  text-align: center; /* Вирівнювання підзаголовка по центру */
+}
+
+#fh5co-blog {
+  background: #007bff;
+  padding: 70px 0;
+}
+
+#fh5co-blog .fh5co-post {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#fh5co-blog .fh5co-post:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#fh5co-blog .fh5co-post img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+#fh5co-blog .fh5co-date {
+  color: #007bff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#fh5co-blog .fh5co-post h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #323232;
+}
+
+#fh5co-blog .btn-primary {
+  background: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+#fh5co-blog .btn-primary:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+#fh5co-blog .btn-outline {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+#fh5co-blog .btn-outline:hover {
+  background: #007bff;
+  color: #ffffff;
+}
+
+#fh5co-blog .with-arrow {
+  position: relative;
+  padding-right: 30px;
+}
+
+#fh5co-blog .with-arrow:after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
 
 
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
@@ -1307,7 +1397,7 @@ button:hover {
   width: 60px;
   height: 2px;
   margin: 0 auto;
-  background: #F85A16;
+  background: #007bff;
   content: '';
 }
 .fh5co-heading p {
