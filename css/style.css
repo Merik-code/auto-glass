@@ -269,6 +269,57 @@ h1, h2, h3, h4, h5, h6 {
   display: block; /* Показати відповідь */
 }
 
+#additional-block {
+  background: #f8f9fa;
+  padding: 40px 0;
+}
+#fh5co-faq header h2.fh5co-heading {
+  color: #007bff; /* This sets the color of the heading to blue */
+  margin-bottom: 30px; /* Adjusts the space below the heading for better visual separation */
+  padding-top: 20px; /* Adds space above the heading if needed */
+}
+
+#fh5co-faq {
+  padding: 50px 0; /* Adds more padding around the entire section for a balanced look */
+}
+
+#fh5co-faq article p, 
+#fh5co-faq article ul {
+  margin-bottom: 20px; /* Adds more space below paragraphs and lists for readability */
+}
+
+#fh5co-faq article ul li {
+  margin-bottom: 10px; /* Adds space below each list item for clarity */
+}
+
+
+#additional-block h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+#additional-block ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#additional-block li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#additional-block p, #additional-block li {
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  #additional-block h2 {
+    font-size: 2rem;
+  }
+}
+
 
 
 .calculator {
