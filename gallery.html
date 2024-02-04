@@ -152,16 +152,16 @@
 					</ul>		
 				</div>
 			</div>
-			<div id="ai-recommendation-tool">
-				<h2>Дізнайтесь, яка послуга вам підходить!</h2>
-				<div id="chat-interface"></div>
-				<input type="text" id="user-input" placeholder="Введіть ваше питання...">
-				<button onclick="getRecommendation()">Отримати рекомендацію</button>
-			</div>
 		</div>
 
 
 	</div>
+	  	<div id="ai-recommendation-tool">
+				<h2>Дізнайтесь, яка послуга вам підходить!</h2>
+				<input type="text" id="user-input" placeholder="Введіть ваше питання...">
+				<button onclick="getRecommendation()">Отримати рекомендацію</button>
+				<div id="response"></div> <!-- Додано елемент для виводу відповіді -->
+			</div>
 
 	<!-- Реклама -->
 	<div id="fh5co-started" class="fh5co-bg" style="background-image: url(images/auto-garage.JPG);">
@@ -245,42 +245,34 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-<script>
-	function getRecommendation() {
-    let userInput = document.getElementById("user-input").value.toLowerCase();
-    let response = "";
-    let chatHistory = document.getElementById("chat-history");
-
-    if (userInput.includes("тріщина") || userInput.includes("ремонт")) {
-        response = "Рекомендуємо вам послугу ремонту автоскла.";
-    } else if (userInput.includes("тонування")) {
-        response = "Вам підійде наша послуга тонування автоскла.";
-    } else if (userInput.includes("заміна")) {
-        response = "Здається, вам необхідна заміна автоскла.";
-    } else {
-        response = "Будь ласка, уточніть ваш запит для кращої рекомендації.";
-    }
-
-    let userQuestion = document.createElement("li");
-    userQuestion.textContent = "Ви: " + document.getElementById("user-input").value;
-    userQuestion.style.fontWeight = "bold";
-
-    let aiResponse = document.createElement("li");
-    aiResponse.textContent = "Помічник: " + response;
-
-    chatHistory.appendChild(userQuestion);
-    chatHistory.appendChild(aiResponse);
-
-    document.getElementById("user-input").value = ""; // Очищення поля введення після відправки запиту
-}
-
-// Дозволяє користувачам надсилати запит, натискаючи Enter
-document.getElementById("user-input").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        getRecommendation();
-    }
-});
+	<script>
+		function getRecommendation() {
+			let userInput = document.getElementById("user-input").value.toLowerCase();
+			let response = "";
+	
+			if (userInput.includes("тріщина") || userInput.includes("ремонт")) {
+				response = "Рекомендуємо вам послугу ремонту автоскла.";
+			} else if (userInput.includes("тонування")) {
+				response = "Вам підійде наша послуга тонування автоскла.";
+			} else if (userInput.includes("заміна")) {
+				response = "Здається, вам необхідна заміна автоскла.";
+			} else {
+				response = "Будь ласка, уточніть ваш запит для кращої рекомендації.";
+			}
+	
+			document.getElementById("response").textContent = response; // Виводимо відповідь у спеціально відведений для цього елемент
+			document.getElementById("user-input").value = ""; // Очищення поля введення після відправки запиту
+		}
+	
+		// Дозволяє користувачам надсилати запит, натискаючи Enter
+		document.getElementById("user-input").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault(); // Запобігання додатковій передачі форми
+				getRecommendation();
+			}
+		});
 	</script>
+
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
